@@ -185,10 +185,25 @@ body {
 
 /* Form */
 .wrap-form {
-
+    width: min(60rem, 100%); /* Utiliza el tamaño más pequeño, sino el 100% */
+    margin: 0 auto;
 }
-.form-title {
+.wrap-form .form-title {
     text-align: var(--text-position);
     color: var(--dark);
     font-size: var(--size-title);
+}
+.wrap-form .wrapper-form {
+    background: var(--grey);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.wrap-form .wrapper-form fieldset {
+    border: none;
+}
+.wrap-form .wrapper-form fieldset legend {
+    color: var(--primary);
+    font-size: var(--size-main);
+    text-align: var(--text-position);
+    font-weight: 700;
 }
