@@ -1,0 +1,78 @@
+
+
+
+:root {
+    /* Colors */
+    --primary: #9c27b0;
+    --primary-dark: #89119d;
+    --secondary: #ffce00;
+    --secondary-dark: #e9bb02;
+    --white: #fff;
+    --black: #000;
+
+    /* Fonts */
+    --title-font: "Staatliches", sans-serif;
+    --main-font: Arial, Helvetica, sans-serif;
+
+    /* Sizes */
+    --main-size-font: 1.6rem;
+    --pharagraph-size-font: 1.8rem;
+    --title-h1-size: 4rem;
+    --title-h2-size: 3.2rem;
+    --title-h3-size: 2.4rem;
+
+    /* Positions */
+    --text-center : center;
+}
+
+/* Globals */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--primary);
+    font-size: var(--main-size-font);
+    line-height: 1.5;
+}
+p {
+    font-size: var(--pharagraph-size-font);
+    font-family: var(--main-font);
+    color: var(--white);
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    color: var(--white);
+    text-align: var(--text-center);
+}
+h1 {
+    font-size: var(--title-h1-size);
+}
+h2 {
+    font-size: var(--title-h2-size);
+}
+h3 {
+    font-size: var(--title-h3-size);
+}
+
+/* Header */
+header .wrap-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
