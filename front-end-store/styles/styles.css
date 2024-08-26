@@ -62,9 +62,11 @@ h1 {
 }
 h2 {
     font-size: var(--title-h2-size);
+    color: var(--secondary);
 }
 h3 {
     font-size: var(--title-h3-size);
+    color: var(--white);
 }
 img {
     width: 100%;
@@ -174,6 +176,25 @@ img {
     .about__img {
         grid-column: 2 / 3;
     }
+}
+
+/* Shop */
+.shop .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+    .shop .boxes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.shop .boxes .box {
+    padding: 2rem;
+    text-align: var(--text-center);
+}
+.shop .boxes .box .box__title {
+    margin: 0;
 }
 
 /* Footer */
