@@ -1,0 +1,21 @@
+
+
+
+.wrap-sidebar .wrap-courses {
+    list-style: none;
+}
+.wrap-sidebar .wrap-courses .wrapper-course {
+    margin-top: 16px;
+}
+.wrap-sidebar .wrap-courses .wrapper-course:first-of-type {
+    border-bottom: 1px solid var(--grey);
+    margin-top: 0;
+    padding-bottom: 16px;
+}
+.wrap-sidebar .wrap-courses .wrapper-course .course__label {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+.wrap-sidebar .wrap-courses .wrapper-course .course__info {
+    font-weight: 400;
+}

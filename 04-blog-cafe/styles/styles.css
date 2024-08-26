@@ -1,0 +1,13 @@
+
+
+@import "./normalize.css";
+@import "./variables.css";
+@import "./globals.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./pages/index-blog.css";
+@import "./pages/index-aside.css";
+@import "./pages/about.css";
+@import "./pages/courses.css";
+@import "./pages/entry.css";
+@import "./pages/contact.css";

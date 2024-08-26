@@ -1,0 +1,23 @@
+
+
+
+:root {
+    /* Fonts */
+    --font-heading: "PT Sans", sans-serif;
+    --font-main: "Open Sans", sans-serif;
+
+    /* Colors */
+    --primary-color: #784d3c;
+    --white: #fff;
+    --black: #000;
+    --grey: #bcbcbc;
+
+    /* Sizes */
+    --main-size-font: 1.6rem;
+
+    /* Positions */
+    --text-center: center;
+
+    /* Borders */
+    --border-raduis-btn: 0.5rem;
+}
