@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Prefetch -->
+     <link rel="prefetch" href="./about.html" as="document">
+     <link rel="prefetch" href="./courses.html" as="document">
+     <link rel="prefetch" href="./contact.html" as="document">
+    <!-- Preload -->
+    <link rel="preload" href="./../styles/styles.css" as="style">
     <link rel="stylesheet" href="./../styles/styles.css">
     <title>Blog Café</title>
 </head>
@@ -38,10 +44,16 @@
     <main class="container entry">
         <h3 class="text-center">Tipos de granos de Café</h3>
         <div class="wrap-entry">
-            <img 
-                src="./../assets/img/blog1.jpg" 
-                alt="Entrada del blog"
-                title="Entrada del blog">
+            <picture>
+                <source 
+                    srcset="./../assets/img/blog1.webp" 
+                    type="image/webp">
+                <img 
+                    src="./../assets/img/blog1.jpg" 
+                    loading="lazy"
+                    alt="Entrada del blog"
+                    title="Entrada del blog">
+            </picture>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, cupiditate! Quae veritatis fuga consequuntur, dignissimos hic cum rem itaque, maxime repellat perferendis quasi. Nemo, nostrum ab odio voluptate, voluptatibus numquam delectus fugit eveniet cupiditate adipisci iste dolorum. Unde tempora quae architecto non! Id debitis ipsam aliquam error sunt voluptatibus veritatis eveniet odit laboriosam aperiam doloremque nesciunt soluta dolores nobis omnis necessitatibus quia, labore delectus accusamus alias sint incidunt. Quibusdam excepturi temporibus repellendus. Maxime earum tempora quos. Non cumque, ipsum maxime fuga dolores vero nobis nesciunt voluptatem nemo reiciendis temporibus atque expedita labore sed itaque autem laboriosam, harum magnam ut molestiae ea earum illum. Accusamus quisquam necessitatibus rerum iure numquam. Provident rerum alias, ut velit quo saepe nesciunt cumque! Nostrum labore quaerat magnam nobis maiores ad reprehenderit reiciendis itaque. Suscipit quod tenetur voluptas, ad eligendi ratione dolorum sed dignissimos totam soluta labore natus odit quibusdam obcaecati quia magni reiciendis at illo.</p>
         </div>
     </main>

@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Prefetch -->
+     <link rel="prefetch" href="./pages/about.html" as="document">
+     <link rel="prefetch" href="./pages/courses.html" as="document">
+     <link rel="prefetch" href="./pages/contact.html" as="document">
+    <!-- Preload -->
+    <link rel="preload" href="./styles/styles.css" as="style">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Blog Café</title>
 </head>
@@ -39,11 +45,17 @@
         <main class="wrap-blog">
             <h3>Nuestro Blog</h3>
             <article class="blog-entry">
-                <img 
-                    src="./assets/img/blog1.jpg" 
-                    alt="Imagen Blog"
-                    title="Imagen Blog" 
-                    class="blog-entry__img">
+                <picture>
+                    <source 
+                        srcset="./assets/img/blog1.webp" 
+                        type="image/webp">
+                    <img 
+                        src="./assets/img/blog1.jpg" 
+                        loading="lazy"
+                        alt="Imagen Blog"
+                        title="Imagen Blog" 
+                        class="blog-entry__img">
+                </picture>
                 <div class="blog-entry__contemt">
                     <h4 class="no-margin mt-10">Tipos de granos de Café</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quas minus quam tempore quidem, quos cupiditate accusamus repudiandae dolorum recusandae numquam incidunt ratione cum voluptates.</p>
@@ -51,11 +63,17 @@
                 </div>
             </article>
             <article class="blog-entry">
-                <img 
-                    src="./assets/img/blog2.jpg" 
-                    alt="Imagen Blog"
-                    title="Imagen Blog" 
-                    class="blog-entry__img">
+                <picture>
+                    <source 
+                        srcset="./assets/img/blog2.webp" 
+                        type="image/webp">
+                    <img 
+                        src="./assets/img/blog2.jpg" 
+                        loading="lazy"
+                        alt="Imagen Blog"
+                        title="Imagen Blog" 
+                        class="blog-entry__img">
+                </picture>
                 <div class="blog-entry__contemt">
                     <h4 class="no-margin mt-10">Tres deliciosas recetas del Café</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quas minus quam tempore quidem, quos cupiditate accusamus repudiandae dolorum recusandae numquam incidunt ratione cum voluptates.</p>
@@ -63,11 +81,17 @@
                 </div>
             </article>
             <article class="blog-entry">
-                <img 
-                    src="./assets/img/blog3.jpg" 
-                    alt="Imagen Blog"
-                    title="Imagen Blog" 
-                    class="blog-entry__img">
+                <picture>
+                    <source 
+                        srcset="./assets/img/blog3.webp" 
+                        type="image/webp">
+                    <img 
+                        src="./assets/img/blog3.jpg" 
+                        loading="lazy"
+                        alt="Imagen Blog"
+                        title="Imagen Blog" 
+                        class="blog-entry__img">
+                </picture>
                 <div class="blog-entry__contemt">
                     <h4 class="no-margin mt-10">Beneficios del Café</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quas minus quam tempore quidem, quos cupiditate accusamus repudiandae dolorum recusandae numquam incidunt ratione cum voluptates.</p>

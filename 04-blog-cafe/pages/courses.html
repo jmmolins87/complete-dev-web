@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Prefetch -->
+    <link rel="prefetch" href="./about.html" as="document">
+    <link rel="prefetch" href="./courses.html" as="document">
+    <link rel="prefetch" href="./contact.html" as="document">
+    <!-- Preload -->
+    <link rel="preload" href="./../styles/styles.css" as="style">
     <link rel="stylesheet" href="./../styles/styles.css">
     <title>Blog Café</title>
 </head>
@@ -39,10 +45,16 @@
         <h3 class="text-center">Nuestros próximos cursos y talleres</h3>
         <div class="wrap-course">
             <div class="course__img">
-                <img 
-                    src="./../assets/img/curso1.jpg" 
-                    alt="Imagen curso"
-                    title="Imagen curso">
+                <picture>
+                    <source 
+                        srcset="./../assets/img/curso1.webp" 
+                        type="image/webp">
+                    <img 
+                        src="./../assets/img/curso1.jpg" 
+                        loading="lazy"
+                        alt="Imagen curso"
+                        title="Imagen curso">
+                </picture>
             </div>
             <div class="course__info">
                 <h4 class="no-margin">Técnicas de Café</h4>
@@ -59,10 +71,16 @@
         </div>
         <div class="wrap-course">
             <div class="course__img">
-                <img 
-                    src="./../assets/img/curso2.jpg" 
-                    alt="Imagen curso"
-                    title="Imagen curso">
+                <picture>
+                    <source 
+                        srcset="./../assets/img/curso2.webp" 
+                        type="image/webp">
+                    <img 
+                        src="./../assets/img/curso2.jpg" 
+                        loading="lazy"
+                        alt="Imagen curso"
+                        title="Imagen curso">
+                </picture>
             </div>
             <div class="course__info">
                 <h4 class="no-margin">Técnicas de Café</h4>
@@ -79,10 +97,16 @@
         </div>
         <div class="wrap-course">
             <div class="course__img">
-                <img 
-                    src="./../assets/img/curso3.jpg" 
-                    alt="Imagen curso"
-                    title="Imagen curso">
+                <picture>
+                    <source 
+                        srcset="./../assets/img/curso3.webp" 
+                        type="image/webp">
+                    <img 
+                        src="./../assets/img/curso3.jpg" 
+                        loading="lazy"
+                        alt="Imagen curso"
+                        title="Imagen curso">
+                </picture>
             </div>
             <div class="course__info">
                 <h4 class="no-margin">Técnicas de Café</h4>

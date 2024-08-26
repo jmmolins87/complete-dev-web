@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Prefetch -->
+     <link rel="prefetch" href="./about.html" as="document">
+     <link rel="prefetch" href="./courses.html" as="document">
+     <link rel="prefetch" href="./contact.html" as="document">
+    <!-- Preload -->
+    <link rel="preload" href="./../styles/styles.css" as="style">
     <link rel="stylesheet" href="./../styles/styles.css">
     <title>Blog Café</title>
 </head>
@@ -37,6 +43,38 @@
 
     <main class="container contact">
         <h3 class="text-center">Contacto</h3>
+        <div class="wrap-contact">
+            <div class="contact__bg"></div>
+            <form class="form">
+                <div class="form__field">
+                    <label for="name">Nombre</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        placeholder="Tu Nombre">
+                </div>
+                <div class="form__field">
+                    <label for="email">E-mail</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="Tu E-mail">
+                </div>
+                <div class="form__field">
+                    <label for="mensaje">E-mail</label>
+                    <textarea 
+                        id="mensaje" 
+                        placeholder="Tu mensaje">
+                    </textarea>
+                </div>
+                <div class="form__field submit">
+                    <input 
+                        type="submit" 
+                        value="Enviar" 
+                        class="btn btn--primary">
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
