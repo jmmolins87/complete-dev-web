@@ -34,10 +34,31 @@
                 alt="React JS" 
                 title="React JS" 
                 class="shirt__img">
+            <div class="shirt__container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit laboriosam ducimus nulla tempore deserunt illum adipisci animi atque dolore dolorem officia dignissimos sed eligendi earum, explicabo quis, veritatis nostrum. Nobis?</p>
+                <form class="shirt__form">
+                    <select class="shirt__form--field">
+                        <option disabled selected>--Seleccionar talla--</option>
+                        <option value="chica">Chica</option>
+                        <option value="chico">Chico</option>
+                        <option value="meidana">Mediana</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                    <input 
+                        type="number" 
+                        placeholder="Cantidad" 
+                        min="1"
+                        class="shirt__form--field">
+                    <input 
+                        type="submit" 
+                        value="Agregar al carrito" 
+                        class="shirt__form--submit">
+                </form>
+            </div>
         </div>
     </main>
 
-    <footer class="wrap-footer">
+    <footer class="container wrap-footer">
         <p class="wrap-footer__text">Front End Store - Todos los derechos Reservados 
             <span id="year"><span/>
         </p>
