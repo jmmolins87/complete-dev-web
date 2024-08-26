@@ -49,3 +49,35 @@ p {
 
 
 /** CODIGO AQUI **/
+@media screen and (min-width: 768px) {
+    .layout-shifter {
+        display: grid;
+        grid-template-areas: "container down";
+    }
+    aside {
+        grid-area: down;
+    }
+    main {
+        grid-area: container;
+        display: grid;
+        grid-template-areas: "enter-one enter-two";
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .layout-shifter {
+        grid-template-areas: "container sidebar";
+        column-gap: 2rem;
+    }
+    aside {
+        grid-area: sidebar;
+    }
+    main {
+        grid-area: container;
+        grid-template-areas:    "enter-one" 
+                                "enter-two";
+        grid-template-columns: unset;
+
+    }
+}

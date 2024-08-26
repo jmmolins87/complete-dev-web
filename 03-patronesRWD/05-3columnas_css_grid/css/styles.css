@@ -49,3 +49,18 @@ p {
 
 
 /** CODIGO AQUI **/
+@media screen and (min-width: 768px) {
+    .container-grid {
+        display: grid;
+        grid-template-areas: "left main right"; /* Es como pintar el layout de la página; left sería el aside izquierdo, el main el contenido central y right el aside derecho */
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-auto-flow: column;
+        column-gap: 2rem;
+    }
+    .container-main {
+        grid-area: main;
+    }
+    aside:nth-of-type(1) {
+        grid-area: left;
+    }
+}
