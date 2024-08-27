@@ -3,13 +3,19 @@
 
 
 /* Header */
+.webp .header {
+    background: url('./../../assets/img/banner.webp') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+.nowebp .header {
+    background: url('./../../assets/img/banner.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
 .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: url('./../../assets/img/banner.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
     height: 100vh;
 }
 @media screen and (min-width: 768px) {
