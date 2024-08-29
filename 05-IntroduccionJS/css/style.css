@@ -29,3 +29,20 @@ p {
 .hashtag {
     font-family: Arial, Helvetica, sans-serif;
 }
+.wrap-btn {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.wrap-btn .btn {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: box-shadow .3s ease-in-out;
+}
+.wrap-btn .btn:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .6);
+}
