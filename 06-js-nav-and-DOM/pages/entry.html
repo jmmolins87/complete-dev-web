@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Prefetch -->
+     <link rel="prefetch" href="./about.html" as="document">
+     <link rel="prefetch" href="./courses.html" as="document">
+     <link rel="prefetch" href="./contact.html" as="document">
+    <!-- Preload -->
+    <link rel="preload" href="./../styles/styles.css" as="style">
+    <link rel="stylesheet" href="./../styles/styles.css">
+    <title>Blog Café</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__navigation">
+                <div class="wrap-logo">
+                    <a href="./../index.html" class="logo">
+                        <h1 class="logo__name text-center">Blog<span class="logo__name--bold">DeCafé</span></h1>
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <a href="./about.html" class="navbar__link">Nosotros</a>
+                    <a href="./courses.html" class="navbar__link">Cursos</a>
+                    <a href="./contact.html" class="navbar__link">Contacto</a>
+                </nav>
+            </div>
+            <div class="header__text">
+                <h2>Blog de café con consejos y cursos</h2>
+                <p>Aprende de los expertos con las mejores recetas y consejos</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container entry">
+        <h3 class="text-center">Tipos de granos de Café</h3>
+        <div class="wrap-entry">
+            <picture>
+                <source 
+                    srcset="./../assets/img/blog1.webp" 
+                    type="image/webp">
+                <img 
+                    src="./../assets/img/blog1.jpg" 
+                    loading="lazy"
+                    alt="Entrada del blog"
+                    title="Entrada del blog">
+            </picture>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, cupiditate! Quae veritatis fuga consequuntur, dignissimos hic cum rem itaque, maxime repellat perferendis quasi. Nemo, nostrum ab odio voluptate, voluptatibus numquam delectus fugit eveniet cupiditate adipisci iste dolorum. Unde tempora quae architecto non! Id debitis ipsam aliquam error sunt voluptatibus veritatis eveniet odit laboriosam aperiam doloremque nesciunt soluta dolores nobis omnis necessitatibus quia, labore delectus accusamus alias sint incidunt. Quibusdam excepturi temporibus repellendus. Maxime earum tempora quos. Non cumque, ipsum maxime fuga dolores vero nobis nesciunt voluptatem nemo reiciendis temporibus atque expedita labore sed itaque autem laboriosam, harum magnam ut molestiae ea earum illum. Accusamus quisquam necessitatibus rerum iure numquam. Provident rerum alias, ut velit quo saepe nesciunt cumque! Nostrum labore quaerat magnam nobis maiores ad reprehenderit reiciendis itaque. Suscipit quod tenetur voluptas, ad eligendi ratione dolorum sed dignissimos totam soluta labore natus odit quibusdam obcaecati quia magni reiciendis at illo.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="wrap-footer__content">
+                <div class="wrap-logo">
+                    <a href="./../index.html" class="logo">
+                        <h1 class="logo__name text-center">Blog<span class="logo__name--bold">DeCafé</span></h1>
+                    </a>
+                </div>
+                <p class="rights">BlogDeCafé &copy; Todos los derechos reservados <span id="year"></span></p>
+                <nav class="navbar">
+                    <a href="./about.html" class="navbar__link">Nosotros</a>
+                    <a href="./courses.html" class="navbar__link">Cursos</a>
+                    <a href="./contact.html" class="navbar__link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById('year').textContent = year;
+    </script>
+    
+</body>
+</html>

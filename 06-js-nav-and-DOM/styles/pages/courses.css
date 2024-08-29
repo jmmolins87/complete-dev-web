@@ -1,0 +1,31 @@
+
+
+
+.courses {
+    padding: 3rem;
+}
+.courses .wrap-course {
+    border-bottom: 1px solid var(--grey);
+    margin-top: 24px;
+    padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+    .courses .wrap-course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.courses .wrap-course:last-of-type {
+    border-bottom: none;
+}
+.courses .wrap-course .course__info {
+    margin-top: 16px;
+}
+.courses .wrap-course .course__info .course__label {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+.courses .wrap-course .course__info .course__info {
+    font-weight: 400;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Prefetch -->
+     <link rel="prefetch" href="./about.html" as="document">
+     <link rel="prefetch" href="./courses.html" as="document">
+     <link rel="prefetch" href="./contact.html" as="document">
+    <!-- Preload -->
+    <link rel="preload" href="./../styles/styles.css" as="style">
+    <link rel="stylesheet" href="./../styles/styles.css">
+    <title>Blog Café</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__navigation">
+                <div class="wrap-logo">
+                    <a href="./../index.html" class="logo">
+                        <h1 class="logo__name text-center">Blog<span class="logo__name--bold">DeCafé</span></h1>
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <a href="./about.html" class="navbar__link">Nosotros</a>
+                    <a href="./courses.html" class="navbar__link">Cursos</a>
+                    <a href="./contact.html" class="navbar__link">Contacto</a>
+                </nav>
+            </div>
+            <div class="header__text">
+                <h2>Blog de café con consejos y cursos</h2>
+                <p>Aprende de los expertos con las mejores recetas y consejos</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container about">
+        <h3 class="text-center">Sobre Nosotros</h3>
+        <div class="wrap-about">
+            <picture>
+                <source 
+                    srcset="./../assets/img/nosotros.jpg" 
+                    type="image/webp">
+                <img 
+                    src="./../assets/img/nosotros.jpg" 
+                    loading="lazy"
+                    alt="about"
+                    title="about" 
+                    class="wrap-about__img">
+            </picture>
+            <div class="wrap-about__info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quia modi dolorem asperiores reprehenderit impedit eius qui, hic quisquam, repellendus nulla dicta rerum, natus deleniti.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed beatae aliquid fugit deserunt facilis ratione quidem modi dolores asperiores odit distinctio itaque ipsam perferendis ea, quod culpa natus aspernatur iusto, repellat quae soluta sequi. Optio nisi facilis libero eaque. Dolores asperiores, minus reiciendis quis doloremque distinctio tempora qui minima eligendi necessitatibus perferendis illo porro atque?</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="wrap-footer__content">
+                <div class="wrap-logo">
+                    <a href="./../index.html" class="logo">
+                        <h1 class="logo__name text-center">Blog<span class="logo__name--bold">DeCafé</span></h1>
+                    </a>
+                </div>
+                <p class="rights">BlogDeCafé &copy; Todos los derechos reservados <span id="year"></span></p>
+                <nav class="navbar">
+                    <a href="./about.html" class="navbar__link">Nosotros</a>
+                    <a href="./courses.html" class="navbar__link">Cursos</a>
+                    <a href="./contact.html" class="navbar__link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const year = new Date().getFullYear();
+        document.getElementById('year').textContent = year;
+    </script>
+    
+</body>
+</html>
