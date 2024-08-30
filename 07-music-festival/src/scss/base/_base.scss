@@ -1,0 +1,7 @@
+
+
+
+@forward './base/normalize'; // Import the normalize.scss files
+@use './base/variables' as *; // Import the variables.scss file
+@use './base/mixins' as *; // Import the mixins.scss file
+@forward './base/globals'; // Import the globals.scss file

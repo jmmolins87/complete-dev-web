@@ -1,0 +1,14 @@
+
+
+
+@mixin responsive($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin grid($columns, $fr, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, $fr);
+  column-gap: $gap;
+}

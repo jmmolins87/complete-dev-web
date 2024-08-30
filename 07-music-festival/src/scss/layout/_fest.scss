@@ -1,0 +1,26 @@
+
+@use './../base/variables' as *; // Import all the variables from the file
+@use './../base/mixins' as *; // Import mixins
+
+
+.wrap-festival {
+    &__content {
+        margin-top: 2rem;
+        &--title{
+            margin-bottom: 1rem;
+        }
+        &--date {
+            color: $success;
+            font-size: 1.8rem;
+        }
+        &--description:first-of-type {
+            margin-top: 0;
+        }
+        &--description:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    @include responsive($desktop) {
+        @include grid(2, 1fr, 5rem);
+    }
+}

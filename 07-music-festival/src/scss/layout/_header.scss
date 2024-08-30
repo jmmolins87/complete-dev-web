@@ -1,0 +1,45 @@
+
+
+
+@use './../base/variables' as *; // Import all the variables from the variables.scss file
+@use './../base/mixins' as *; // Import all the mixins from the mixins.scss file
+
+
+.wrap-header {
+    background: $success;
+    .header-content {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive($desktop) {
+            flex-direction: row;
+        }   
+        &__title {
+            color: $white;
+            margin: 0;
+            text-align: center;
+            @include responsive($desktop) {
+                text-align: left;
+            }   
+        }
+        &__navbar {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            @include responsive($desktop) {
+                gap: 3rem;
+                margin-top: 0;
+            } 
+            &--link {
+                color: $white;
+                font-size: 2rem;
+                transition: color .2s ease-in-out;
+                &:hover {
+                    color: $warning;
+                }
+            }
+        }
+    }
+}
