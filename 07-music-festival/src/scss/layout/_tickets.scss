@@ -14,6 +14,7 @@
             @include grid(2, 1fr, 5rem);
         }
         .pass {
+            border-radius: 15px;
             transition: transform .2s ease-in-out;
             &:hover {
                 transform: scale(1.05);
@@ -35,6 +36,8 @@
             }
             &-header {
                 background: $danger;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
                 p {
                     text-transform: uppercase;
                     font-size: 2.2rem;
@@ -50,6 +53,8 @@
             &-footer {
                 background: $white;
                 padding: 3rem;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
                 p {
                     font-size: 2.8rem;
                     font-weight: 900;

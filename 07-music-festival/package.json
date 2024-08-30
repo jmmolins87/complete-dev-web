@@ -17,6 +17,7 @@
   "author": "Juanma Molins Cortés",
   "license": "ISC",
   "dependencies": {
+    "gulp-sass": "^5.1.0",
     "sass": "^1.77.8"
   },
   "devDependencies": {
