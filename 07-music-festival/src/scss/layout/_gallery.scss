@@ -1,0 +1,79 @@
+
+
+@use './../base/variables' as *; // Import all the variables from the file
+@use './../base/mixins' as *; // Import all the mixins from the file
+
+.wrap-gallery-imgs {
+    @include grid(1, 1fr, 5rem);
+    @include responsive($tablet) {
+        @include grid(3, 1fr, 5rem);
+    }
+    @include responsive($desktop) {
+        @include grid(4, 1fr, 5rem);
+    }
+    img {
+        margin-top: 3rem;
+        height: 20rem;
+        width: 100%;
+        cursor: pointer;
+        @include responsive($tablet) {
+            height: 12.5rem;
+        }
+        @include responsive($desktop) {
+            height: 15rem;
+        }
+    }
+}
+.wrap-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background: rgba($black, 0.5);
+    animation: fadeIn ease-in-out .5s;
+    z-index: 3;
+    &.fade-out {
+        animation: fadeOut ease-in-out .5s;
+    }
+    img {
+        max-width: 35rem;
+        @include responsive($tablet) {
+            max-width: 60rem;
+        }
+        @include responsive($desktop) {
+            max-width: 80rem;
+        }
+    }
+}
+.btn-close {
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: $white;
+    border: none;
+    color: $black;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

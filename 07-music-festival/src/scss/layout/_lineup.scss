@@ -1,0 +1,62 @@
+
+@use './../base/variables' as *; // Import all the variables from the variables file
+@use './../base/mixins' as *; // Import all the mixins from the mixins file
+
+.lineup {
+    background: $danger;
+    &__title,
+    &__day {
+        color: $white;
+        text-align: center;
+    }
+    &__day {
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    &__wrap-stage {
+        @include responsive($tablet) {
+            @include grid(2, 1fr, 5rem);
+        }
+        .stage {
+            padding-top: 1rem;
+            &.bg-warn {
+                background: $warning;
+                .stage__calendar {
+                    li:nth-child(odd) {
+                        background: lighten($warning, 10%);
+                    }
+                    li:nth-child(even) {
+                        background: $warning;
+                    }
+                }
+            }
+            &.bg-success {
+                background: $success;
+                .stage__calendar {
+                    li:nth-child(odd) {
+                        background: lighten($success, 10%);
+                    }
+                    li:nth-child(even) {
+                        background: $success;
+                    }
+                }
+            }
+            &__name {
+                font-size: 3rem;
+                font-weight: 900;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            &__calendar {
+                li {
+                    padding: 2.5rem;
+                    font-weight: 700;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+

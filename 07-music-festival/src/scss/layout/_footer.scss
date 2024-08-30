@@ -1,0 +1,15 @@
+
+
+
+@use './../base/variables' as *; // Import all the variables from the file
+
+
+.footer {
+    background: $danger;
+    padding: 2rem 0;
+    p {
+        margin: 0;
+        color: $white;
+        text-align: center;
+    }
+}

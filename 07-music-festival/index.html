@@ -16,9 +16,9 @@
             <div class="header-content">
                 <h1 class="header-content__title">Tech & EDM Festival</h1>
                 <nav class="header-content__navbar">
-                    <a href="javascript:;" class="header-content__navbar--link">Line Up</a>
-                    <a href="javascript:;" class="header-content__navbar--link">Galería</a>
-                    <a href="javascript:;" class="header-content__navbar--link">Tickets</a>
+                    <a href="#lineup" class="header-content__navbar--link">Line Up</a>
+                    <a href="#gallery" class="header-content__navbar--link">Galería</a>
+                    <a href="#tickets" class="header-content__navbar--link">Tickets</a>
                 </nav>
             </div>
         </div>
@@ -52,5 +52,167 @@
             </div>
         </div>
     </section>
+    <section id="lineup" class="lineup">
+        <h3 class="lineup__title">Line Up</h3>
+        <div class="container">
+            <p class="lineup__day">Viernes 21</p>
+            <div class="lineup__wrap-stage">
+                <div class="stage bg-warn">
+                    <p class="stage__name">Techno</p>
+                    <ul class="stage__calendar reset-list">
+                        <li>
+                            24:00 | <span>Adam Beyer</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Carl Cox</span>
+                        </li>
+                        <li>
+                            20:00 | <span>HI-LO</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Amelie Lens</span>
+                        </li>
+                        <li>
+                            18:00 | <span>CamelPhat</span>
+                        </li>
+                        <li>
+                            17:00 | <span>ARTBAT</span>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="stage bg-success">
+                    <p class="stage__name">EDM</p>
+                    <ul class="stage__calendar reset-list">
+                        <li>
+                            24:00 | <span>David Guetta</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Tïesto</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Martin Garrix</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Steve Aoki</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Afrojack</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Vintage Culture</span>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <p class="lineup__day">Sábado 22</p>
+            <div class="lineup__wrap-stage">
+                <div class="stage bg-success">
+                    <p class="stage__name">Techno</p>
+                    <ul class="stage__calendar reset-list">
+                        <li>
+                            24:00 | <span>Reinier Zonneveld</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Eric Prydz</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Deadmau5</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Joris Voorn</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Nina Kraviz</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Argy</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="stage bg-warn">
+                    <p class="stage__name">EDM</p>
+                    <ul class="stage__calendar reset-list">
+                        <li>
+                            24:00 | <span>Armin Van Buuren</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Calvin Harris</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Hardwell</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Above & Beyond</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Diplo</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Steve Angello</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="wrap-gallery">
+        <div class="container">
+            <h3 class="wrap-gallery__title">Galería</h3>
+            <div class="wrap-gallery-imgs"></div>
+        </div>
+    </section>
+    <section id="tickets" class="wrap-tickets">
+        <div class="container">
+            <h3 class="wrap-tickets__title">Tickets</h3>
+            <div class="wrapper-tickets">
+                <div class="pass">
+                    <p class="pass-name">Pase 1 día</p>
+                    <header class="pass-header">
+                        <p>Incluye</p>
+                    </header>
+                    <div class="pass-body">
+                        <ul class="reset-list">
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Bebidas ilimtada</li>
+                            <li>Cama / Pulsera del Evento</li>
+                        </ul>
+                    </div>
+                    <footer class="pass-footer">
+                        <p>$100</p>
+                    </footer>
+                </div>
+                <div class="pass">
+                    <p class="pass-name">Pase 2 días</p>
+                    <header class="pass-header">
+                        <p>Incluye</p>
+                    </header>
+                    <div class="pass-body">
+                        <ul class="reset-list">
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Bebidas ilimtada</li>
+                            <li>Cama / Pulsera del Evento</li>
+                            <li>Acceso Vip</li>
+                        </ul>
+                    </div>
+                    <footer class="pass-footer">
+                        <p>$180</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Techno & EDM Festival. Todos los derechos reservados. <span id="date"></span></p>
+        </div>
+    </footer>
+
+    <script src="./scripts/app.js"></script>
+
+    <script>
+        const date = new Date();
+        const year = date.getFullYear();
+        document.getElementById('date').textContent = year;
+    </script>
 </body>
 </html>

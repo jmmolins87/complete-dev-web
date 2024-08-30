@@ -7,6 +7,13 @@
 
 .wrap-header {
     background: $success;
+    transition: all .3s ease-in-out;
+    &.fixed {
+        position: sticky;
+        top: 0;
+        box-shadow: 0 0.5rem 1rem rgba($black, .7);
+        z-index: 2;
+    }
     .header-content {
         padding: 2rem;
         display: flex;
@@ -36,7 +43,8 @@
                 color: $white;
                 font-size: 2rem;
                 transition: color .2s ease-in-out;
-                &:hover {
+                &:hover,
+                &.active {
                     color: $warning;
                 }
             }
