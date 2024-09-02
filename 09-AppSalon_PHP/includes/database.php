@@ -4,6 +4,7 @@
 // Database connection
 $db = mysqli_connect('localhost', 'root', '', 'appsalon');
 
-if($db){
-    echo "Database connected";
+if(!$db){
+    "Hubo un error";
+    exit;
 }
