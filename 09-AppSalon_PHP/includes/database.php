@@ -2,4 +2,8 @@
 
 
 // Database connection
-mysqli_connect('localhost', 'root', '', 'appsalon');
+$db = mysqli_connect('localhost', 'root', '', 'appsalon');
+
+if($db){
+    echo "Database connected";
+}
