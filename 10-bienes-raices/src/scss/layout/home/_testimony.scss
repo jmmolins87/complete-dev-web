@@ -1,0 +1,31 @@
+
+
+
+.testimonies {
+    .testimony {
+        background: $green;
+        border-radius: $border-radius-15;
+        font-size: 2.4rem;
+        color: $white;
+        height: fit-content;
+        padding: 2rem;
+        blockquote {
+            padding-left: 5rem;
+            position: relative;
+            &::before {
+                content: "";
+                background: url('./../img/comilla.svg') no-repeat;
+                position: absolute;
+                top: 0;
+                left: -2.5rem;
+                display: block;
+                width: 6rem;
+                height: 8rem;
+            }
+        }
+        p {
+            text-align: right;
+            color: $white;
+        }
+    }
+}

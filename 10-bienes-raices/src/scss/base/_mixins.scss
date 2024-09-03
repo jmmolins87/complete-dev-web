@@ -16,8 +16,27 @@
         @content;
     }
 }
-@mixin grid($colummns, $space ) {
+@mixin grid($colummns, $fr, $space ) {
     display: grid;
-    gap: $space;
+    grid-template-columns: $colummns $fr;
+    column-gap: $space;
+}
+@mixin gridRepeat($colummns, $space ) {
+    display: grid;
     grid-template-columns: repeat($colummns, 1fr);
+    gap: $space;
+}
+@mixin btn($bg-color, $color-text, $display) {
+    background: $bg-color;
+    color: $color-text;
+    font-weight: $bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    display: $display;
+    border-radius: $border-radius-10;
+    transition: background .2s ease-in-out;
+    &:hover {
+        background: darken($bg-color, 10%);
+    }
 }

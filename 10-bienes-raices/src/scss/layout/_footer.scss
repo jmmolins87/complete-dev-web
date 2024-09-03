@@ -1,0 +1,13 @@
+
+
+
+.wrap-footer {
+    background: $darkGray;
+    padding: 2rem 0;
+    .wrapper-footer {
+        &--copy {
+            color: $white;
+            text-align: center;
+        }
+    }
+}

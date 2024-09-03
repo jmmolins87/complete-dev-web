@@ -1,4 +1,28 @@
 
 .wrap-header {
+    padding: 2rem;
+    min-height: fit-content;
     background: $darkGray;
+    .wrapper-header {
+        height: auto;
+    }
+    &.home {
+        background: url('../img/header.jpg') no-repeat center center/cover;
+        background-attachment: fixed;
+        @include tablet {
+            min-height: 100vh;
+        }
+        .wrapper-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            h2 {
+                text-align: left;
+                color: $white;
+                font-weight: $bold;
+                margin-bottom: 5rem;
+            }
+        }
+    }
 }

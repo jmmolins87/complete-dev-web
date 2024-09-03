@@ -1,0 +1,58 @@
+
+
+.wrap-publish {
+    @include tablet {
+        @include gridRepeat(3, 2rem);
+    }
+    .wrapper-publish {
+        background: lighten($gray, 1);
+        border: 1px solid darken($gray, 15);
+        border-radius: $border-radius-15;
+        overflow: hidden;
+        margin-top: 3rem;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        @include tablet {
+            margin-top: 0;
+        }
+        .description-publish {
+            padding: 2rem;
+            h3, p {
+                margin: 0;
+            }
+            .price-publish {
+                color: $green;
+                font-size: 3rem;
+                font-weight: $bold;
+            }
+            .properties-publish {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-right: 2rem;
+                    img {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            .btn.btn-warning {
+                @include btn($yellow, $white, block);
+            }
+        }
+    }
+}
+.wrap-btn-all {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3rem;
+    .btn.btn-success {
+        @include btn($green, $white, block);
+    }
+}

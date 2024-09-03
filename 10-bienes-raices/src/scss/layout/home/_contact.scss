@@ -1,0 +1,31 @@
+
+
+
+.wrap-contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/encuentra.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding: $separation 0;
+    color: $white;
+    h2 {
+        font-size: 4rem;
+        font-weight: $bolder;
+    }
+    p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .wrap-contact-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        .btn.btn-warning {
+            @include btn($yellow, $white, inline-flex)
+        }
+    }
+}

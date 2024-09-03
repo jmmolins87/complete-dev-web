@@ -1,0 +1,46 @@
+
+
+
+.wrap-blog {
+    @include tablet {
+        @include grid(2fr, 1fr, 2rem);
+    }
+    .blog {
+        .blog-entry {
+            margin-bottom: 2rem;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            @include tablet {
+                @include grid(1fr, 1fr, 2rem);
+            }
+            img {
+                border-radius: $border-radius-15;
+            }
+            &--text {
+                a {
+                    color: $black;  
+                    display: block;
+                    margin-top: 1.5rem; 
+                    @include tablet {
+                        margin-top: 0;
+                    }
+                }
+                h4 {
+                    margin: 0;
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 15rem;
+                        height: .5rem;
+                        background: $green;
+                        margin-top: .5rem;
+                    }
+                }
+                span {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
