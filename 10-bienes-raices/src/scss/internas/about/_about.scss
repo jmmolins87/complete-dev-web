@@ -1,0 +1,17 @@
+
+
+
+
+.wrap-about {
+    @include tablet {
+        @include gridRepeat(2, 2rem);
+    }
+    &--description {
+        blockquote {
+            font-size: 2.2rem;
+            font-weight: $bolder;
+            padding: 1rem 0 3rem 0;
+            margin: 0;
+        }
+    }
+}

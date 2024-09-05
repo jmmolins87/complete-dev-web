@@ -28,13 +28,18 @@
             }
             .properties-publish {
                 display: flex;
-                justify-content: space-between;
+                box-sizing: border-box;
+                justify-content: space-around;
+                align-items: center;
                 margin-top: 2rem;
                 li {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     margin-right: 2rem;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
                     img {
                         margin-right: 1rem;
                     }

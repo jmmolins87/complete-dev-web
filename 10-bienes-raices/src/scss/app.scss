@@ -11,8 +11,6 @@
 @import './layout/header';
 @import './layout/navigation';
 @import './layout/footer';
-@import './layout/home/icons';
-@import './layout/home/publish';
-@import './layout/home/contact';
-@import './layout/home/blog';
-@import './layout/home/testimony';
+
+// Pages
+@import './internas/internals';
