@@ -18,6 +18,10 @@
             a {
                 color: $white;
                 font-size: 1.5rem;
+                transition: color .2s ease-in-out;
+                &:hover {
+                    color: $green;
+                }
             }
         }
         &--copy {

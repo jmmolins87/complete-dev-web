@@ -4,13 +4,11 @@
         @content;
     }
 }
-
 @mixin tablet {
     @media (min-width: #{$tablet}) {
         @content;
     }
 }
-  
 @mixin desktop {
     @media (min-width: #{$desktop}) {
         @content;
@@ -35,6 +33,8 @@
     text-align: center;
     display: $display;
     border-radius: $border-radius-10;
+    border: none;
+    cursor: pointer;
     transition: background .2s ease-in-out;
     &:hover {
         background: darken($bg-color, 10%);
