@@ -1,4 +1,5 @@
 <?php 
+    $home = false;
     include './../includes/templates/header.php';
 ?>
 
@@ -19,7 +20,7 @@
                         </picture>
                     </div>
                     <div class="blog-entry--text">
-                        <a href="blog_entry.html">
+                        <a href="blog_entry.php">
                             <h4>Terra en el techo de tu casa</h4>
                             <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                             <p>Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero</p>
@@ -39,7 +40,7 @@
                         </picture>
                     </div>
                     <div class="blog-entry--text">
-                        <a href="blog_entry.html">
+                        <a href="blog_entry.php">
                             <h4>Guía para la decoración de tu hogar.</h4>
                             <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                             <p>Máximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
@@ -59,7 +60,7 @@
                         </picture>
                     </div>
                     <div class="blog-entry--text">
-                        <a href="blog_entry.html">
+                        <a href="blog_entry.php">
                             <h4>Guía para la decoración de tu hogar.</h4>
                             <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                             <p>Máximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
@@ -79,7 +80,7 @@
                         </picture>
                     </div>
                     <div class="blog-entry--text">
-                        <a href="blog_entry.html">
+                        <a href="blog_entry.php">
                             <h4>Guía para la decoración de tu hogar.</h4>
                             <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                             <p>Máximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio.</p>

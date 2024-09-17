@@ -13,12 +13,12 @@
         color: $gray !important;
         border-color: $darkGray !important;
     }
-    .wrap-publish {
-        .wrapper-publish {
-            background: $darkGray;
-            border: 1px solid $darkGray;
-        }
-        .properties-publish {
+    .wrapper-publish {
+        background: $darkGray;
+        border: 1px solid $darkGray;
+    }
+    .properties-publish {
+        li {
             img {
                 filter: invert(1);
             }

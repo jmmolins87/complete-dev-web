@@ -1,4 +1,5 @@
 <?php 
+    $home = false;
     include './../includes/templates/header.php';
 ?>
 
@@ -6,11 +7,11 @@
         <div class="wrap-entry-blog">
             <h1>Entrada del blog</h1>
             <picture>
-                <source srcset="./../../build/img/blog1.webp" type="image/webp">
-                <source srcset="./../../build/img/blog1.jpg" type="image/jpeg">
+                <source srcset="/10-bienes-raices/build/img/blog1.webp" type="image/webp">
+                <source srcset="/10-bienes-raices/build/img/blog1.jpg" type="image/jpeg">
                 <img 
                     loading="lazy"
-                    src="./../../build/img/blog1.jpg" 
+                    src="/10-bienes-raices/build/img/blog1.jpg" 
                     alt="Entrada del blog" 
                     title="Entrada del blog">
             </picture>

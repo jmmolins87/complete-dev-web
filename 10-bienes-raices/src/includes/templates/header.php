@@ -9,7 +9,7 @@
 <body>
     
     <!-- Header -->
-    <header class="wrap-header home">
+    <header class="wrap-header <?php echo $home ? 'home' : '' ?>">
         <div class="container">
             <div class="wrapper-header">
                 <div class="wrap-navbar">
@@ -41,9 +41,11 @@
                         </nav>
                     </div>
                 </div>
-                <div class="wrap-heeader--title">
-                    <h2>Venta de Casas y Departamentos Exclusivos</h2>
-                </div>
+                <?php if($home) { ?>
+                    <div class="wrap-heeader--title">
+                        <h2>Venta de Casas y Departamentos Exclusivos</h2>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </header>

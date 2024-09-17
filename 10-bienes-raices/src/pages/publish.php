@@ -1,4 +1,5 @@
 <?php 
+    $home = false;
     include './../includes/templates/header.php';
 ?>
 
@@ -47,7 +48,7 @@
                                     <p>4</p>	
                                 </li>
                             </ul>
-                            <a href="./single_publish.html" class="btn btn-warning">Ver anuncio</a>
+                            <a href="./single_publish.php" class="btn btn-warning">Ver anuncio</a>
                         </div>
                     </div>
                     <div class="wrapper-publish">
@@ -90,7 +91,7 @@
                                     <p>4</p>	
                                 </li>
                             </ul>
-                            <a href="./single_publish.html" class="btn btn-warning">Ver anuncio</a>
+                            <a href="./single_publish.php" class="btn btn-warning">Ver anuncio</a>
                         </div>
                     </div>
                     <div class="wrapper-publish">
@@ -133,7 +134,7 @@
                                     <p>4</p>	
                                 </li>
                             </ul>
-                            <a href="./single_publish.html" class="btn btn-warning">Ver anuncio</a>
+                            <a href="./single_publish.php" class="btn btn-warning">Ver anuncio</a>
                         </div>
                     </div>
                     <div class="wrapper-publish">
@@ -176,7 +177,7 @@
                                     <p>4</p>	
                                 </li>
                             </ul>
-                            <a href="./single_publish.html" class="btn btn-warning">Ver anuncio</a>
+                            <a href="./single_publish.php" class="btn btn-warning">Ver anuncio</a>
                         </div>
                     </div>
                     <div class="wrapper-publish">
@@ -219,7 +220,7 @@
                                     <p>4</p>	
                                 </li>
                             </ul>
-                            <a href="./single_publish.html" class="btn btn-warning">Ver anuncio</a>
+                            <a href="./single_publish.php" class="btn btn-warning">Ver anuncio</a>
                         </div>
                     </div>
                     <div class="wrapper-publish">
@@ -262,7 +263,7 @@
                                     <p>4</p>	
                                 </li>
                             </ul>
-                            <a href="./single_publish.html" class="btn btn-warning">Ver anuncio</a>
+                            <a href="./single_publish.php" class="btn btn-warning">Ver anuncio</a>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 <?php 
+    $home = false;
     include './../includes/templates/header.php';
 ?>
 
@@ -7,11 +8,11 @@
             <h1>Casa en venta frenta al bosque</h1>
 
             <picture>
-                <source srcset="./../../build/img/destacada.webp" type="image/webp">
-                <source srcset="./../../build/img/destacada.jpg" type="image/jpeg">
+                <source srcset="/10-bienes-raices/build/img/destacada.webp" type="image/webp">
+                <source srcset="/10-bienes-raices/build/img/destacada.jpg" type="image/jpeg">
                 <img 
                     loading="lazy"
-                    src="./../../build/img/destacada.jpg" 
+                    src="/10-bienes-raices/build/img/destacada.jpg" 
                     alt="Casa en venta frenta al bosque" 
                     title="Casa en venta frenta al bosque">
             </picture>
