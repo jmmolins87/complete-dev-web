@@ -210,7 +210,7 @@
                                 loading="lazy">
                         </picture>
                         <div class="blog-entry--text">
-                            <a href="entry.php">
+                            <a href="/10-bienes-raices/src/pages/blog_entry.php">
                                 <h4>Terra en el techo de tu casa</h4>
                                 <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                                 <p>Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero</p>
@@ -228,7 +228,7 @@
                                 loading="lazy">
                         </picture>
                         <div class="blog-entry--text">
-                            <a href="entry.php">
+                            <a href="/10-bienes-raices/src/pages/blog_entry.php">
                                 <h4>Guía para la decoración de tu hogar.</h4>
                                 <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                                 <p>Máximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
