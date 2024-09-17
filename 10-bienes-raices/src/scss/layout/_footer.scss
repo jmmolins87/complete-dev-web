@@ -6,15 +6,23 @@
     padding: 2rem 0;
     .wrapper-footer {
         display: flex;
+        flex-direction: column;
         box-sizing: border-box;
         justify-content: space-between;
         align-items: center;
+        @include tablet {
+            flex-direction: row;
+        }
         &--navigation {
             display: flex;
             box-sizing: border-box;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             gap: 2rem;
+            @include tablet {
+                flex-direction: row;
+            }
             a {
                 color: $white;
                 font-size: 1.5rem;
@@ -22,6 +30,12 @@
                 &:hover {
                     color: $green;
                 }
+            }
+        }
+        &--logo {
+            margin-top: 2rem;
+            @include tablet {
+                margin-top: 0;
             }
         }
         &--copy {

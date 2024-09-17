@@ -9,14 +9,39 @@
     @include tablet {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+    }
+    .wrap-right {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        @include tablet {
+            align-items: flex-end;
+        }
+        .dark-mode-btn {
+            width: 3rem;
+            cursor: pointer;
+            margin: 1rem 0;
+            filter: invert(1);
+            @include tablet {
+                margin-top: 0;
+            }
+        }
     }
     &--navigation {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: visibility .2s ease-in-out, opacity .2s ease-in-out, height .2s ease-in-out;
         @include tablet {
             display: flex;
             box-sizing: border-box;
             justify-content: center;
             align-items: center;
             gap: 2rem;
+            visibility: visible;
+            opacity: 1;
         }
         .link {
             color: $white;
@@ -28,5 +53,20 @@
                 color: $green;
             }
         }
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+        @include tablet {
+            display: none;
+        }
+        img {
+            width: 5rem;
+        }
+    }
+    .wrap-navbar--navigation.show {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
     }
 }

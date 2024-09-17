@@ -19,12 +19,25 @@
                             alt="Logo de Bienes Raíces" 
                             title="Logo de Bienes Raíces">
                     </a>
-                    <nav class="wrap-navbar--navigation">
-                        <a href="./about.html" class="link">Nosotros</a>
-                        <a href="./publish.html" class="link">Anuncios</a>
-                        <a href="./blog.html" class="link">Blog</a>
-                        <a href="./contact.html" class="link">Contacto</a>
-                    </nav>
+                    <div class="mobile-menu">
+                        <img 
+                            src="./../../build/img/barras.svg" 
+                            alt="mobile menu" 
+                            title="mobile menu">
+                    </div>
+                    <div class="wrap-right">
+                        <img 
+                            src="./../../build/img/dark-mode.svg" 
+                            alt="dark-mode" 
+                            title="dark-mode"
+                            class="dark-mode-btn">
+                        <nav class="wrap-navbar--navigation">
+                            <a href="./about.html" class="link">Nosotros</a>
+                            <a href="./publish.html" class="link">Anuncios</a>
+                            <a href="./blog.html" class="link">Blog</a>
+                            <a href="./contact.html" class="link">Contacto</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,5 +118,6 @@
         document.getElementById('date').textContent = year;
     </script>
     <script src="./../../build/js/bundle.js.min.map"></script>
+    <script src="./../js/app.js"></script>
 </body>
 </html>

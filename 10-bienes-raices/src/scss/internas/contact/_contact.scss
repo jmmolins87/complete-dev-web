@@ -2,6 +2,9 @@
 
 
 .wrap-form {
+    fieldset {
+        border-radius: $border-radius-10;
+    }
     p {
         font-size: 1.4rem;
         color: $darkGray;

@@ -1,0 +1,27 @@
+
+
+.dark-mode {
+    background: darken($darkGray, 10);
+    p, legend {
+        color: $white;
+    }
+    a, h1, h2, h3, h4, blockquote, label {
+        color: $gray;
+    }
+    input, select, textarea {
+        background: $darkGray !important;
+        color: $gray !important;
+        border-color: $darkGray !important;
+    }
+    .wrap-publish {
+        .wrapper-publish {
+            background: $darkGray;
+            border: 1px solid $darkGray;
+        }
+        .properties-publish {
+            img {
+                filter: invert(1);
+            }
+        }
+    }
+}
