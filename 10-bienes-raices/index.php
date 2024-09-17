@@ -86,7 +86,7 @@
                                 <p>4</p>	
                             </li>
                         </ul>
-                        <a href="./src/pages/publish.html" class="btn btn-warning">Ver anuncio</a>
+                        <a href="./src/pages/publish.php" class="btn btn-warning">Ver anuncio</a>
                     </div>
                 </div>
                 <div class="wrapper-publish">
@@ -129,7 +129,7 @@
                                 <p>4</p>	
                             </li>
                         </ul>
-                        <a href="./src/pages/publish.html" class="btn btn-warning">Ver anuncio</a>
+                        <a href="./src/pages/publish.php" class="btn btn-warning">Ver anuncio</a>
                     </div>
                 </div>
                 <div class="wrapper-publish">
@@ -172,12 +172,12 @@
                                 <p>4</p>	
                             </li>
                         </ul>
-                        <a href="./src/pages/publish.html" class="btn btn-warning">Ver anuncio</a>
+                        <a href="./src/pages/publish.php" class="btn btn-warning">Ver anuncio</a>
                     </div>
                 </div>
             </div>
             <div class="wrap-btn-all">
-                <a href="./src/pages/publish.html" class="btn btn-success">Ver todas</a>
+                <a href="./src/pages/publish.php" class="btn btn-success">Ver todas</a>
             </div>
         </section>
     </div>
@@ -188,7 +188,7 @@
             <h2>Encuentra la casa de tus sueños</h2>
             <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
             <div class="wrap-contact-btn">
-                <a href="./src/pages/contact.html" class="btn btn-warning">Contáctanos</a>
+                <a href="./src/pages/contact.php" class="btn btn-warning">Contáctanos</a>
             </div>
         </div>
     </section>
@@ -210,7 +210,7 @@
                                 loading="lazy">
                         </picture>
                         <div class="blog-entry--text">
-                            <a href="entry.html">
+                            <a href="entry.php">
                                 <h4>Terra en el techo de tu casa</h4>
                                 <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                                 <p>Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero</p>
@@ -228,7 +228,7 @@
                                 loading="lazy">
                         </picture>
                         <div class="blog-entry--text">
-                            <a href="entry.html">
+                            <a href="entry.php">
                                 <h4>Guía para la decoración de tu hogar.</h4>
                                 <p>Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                                 <p>Máximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio.</p>
