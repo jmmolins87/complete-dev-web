@@ -1,6 +1,6 @@
 <?php 
-    $home = true;
-    include './src/includes/templates/header.php'; 
+    require './src/includes/functions.php';
+    getTemplate('header', $home = true);
 ?>
 
     <!-- Sobre nosotros -->
@@ -248,5 +248,5 @@
      </div>
 
 <?php 
-    include './src/includes/templates/footer.php';
+    getTemplate('footer');
 ?>
