@@ -45,9 +45,6 @@
                     }
                 }
             }
-            .btn.btn-warning {
-                @include btn($yellow, $white, block);
-            }
         }
     }
 }
@@ -57,7 +54,4 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 3rem;
-    .btn.btn-success {
-        @include btn($green, $white, block);
-    }
 }

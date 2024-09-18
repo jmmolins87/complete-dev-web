@@ -8,7 +8,7 @@
     a, h1, h2, h3, h4, blockquote, label {
         color: $gray;
     }
-    input, select, textarea {
+    input:not([type="submit"]), select, textarea {
         background: $darkGray !important;
         color: $gray !important;
         border-color: $darkGray !important;

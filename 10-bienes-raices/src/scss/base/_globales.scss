@@ -54,3 +54,12 @@ ul {
     list-style: none;
     padding: 0;
 }
+
+// Buttons
+.btn.btn-warning {
+    @include btn($yellow, $white, block);
+}
+.btn.btn-success {
+    @include btn($green, $white, block);
+    width: fit-content;
+}

@@ -5,3 +5,20 @@
 .center-content {
     max-width: 80rem;
 }
+
+// margin top
+.mt-1 {
+    margin-top: calc($separation / 4);
+}
+.mt-2 {
+    margin-top: calc($separation / 2);
+}
+.mt-3 {
+    margin-top: calc($separation);
+}
+.mt-4 {
+    margin-top: calc($separation * 2);
+}
+.mt-5 {
+    margin-top: calc($separation * 3);
+}
