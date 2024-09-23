@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <?php if($home) { ?>
-                    <div class="wrap-heeader--title">
+                    <div class="wrap-header--title">
                         <h2>Venta de Casas y Departamentos Exclusivos</h2>
                     </div>
                 <?php } ?>

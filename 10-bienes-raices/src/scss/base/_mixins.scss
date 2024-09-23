@@ -24,7 +24,13 @@
     grid-template-columns: repeat($colummns, 1fr);
     gap: $space;
 }
-@mixin btn($bg-color, $color-text, $display) {
+@mixin btn($bg-color, $color-text:"", $display) {
+    @if $bg-color == $yellow {
+        width: $full;
+    } @else {
+        width: $fit-content;
+    }
+
     background: $bg-color;
     color: $color-text;
     font-weight: $bold;

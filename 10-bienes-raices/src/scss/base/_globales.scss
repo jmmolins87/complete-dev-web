@@ -56,10 +56,35 @@ ul {
 }
 
 // Buttons
-.btn.btn-warning {
-    @include btn($yellow, $white, block);
+.btn {
+    &.btn-warning {
+        @include btn($yellow, $white, block);
+    }
+    &.btn-success {
+        @include btn($green, $white, block);
+    }
 }
-.btn.btn-success {
-    @include btn($green, $white, block);
-    width: fit-content;
+
+// Alerts
+.wrap-alerts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.alert {
+    border-radius: $border-radius-10;
+    padding: 1rem;
+    width: $fit-content;
+    &.alert-danger {
+        background: rgba($red, .1);
+        color: $red;
+        border: 1px solid $red;
+    }
+    &.alert-warning {
+        background: rgba($yellow, .1);
+        color: $yellow;
+        border: 1px solid $yellow;
+    }
 }

@@ -26,7 +26,8 @@
         align-items: center;
         margin-top: 3rem;
         .btn.btn-warning {
-            @include btn($yellow, $white, inline-flex)
+            @include btn($yellow, $white, inline-flex);
+            width: $fit-content;
         }
     }
 }

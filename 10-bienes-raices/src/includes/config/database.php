@@ -1,11 +1,15 @@
 
 
 <?php
-    $mysqli = new mysqli("localhost", "root", "", "bienes_raices_crud");
+    function connectDB() : mysqli {
+        $db = mysqli_connect('localhost', 'root', '', 'bienesraices_crud');
+    
+        
+        if(!$db) {
+            echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
+            exit;
+        }
 
-    // Check connection
-    if ($mysqli -> connect_errno) {
-        echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-        exit();
+        return $db;
     }
 ?>
